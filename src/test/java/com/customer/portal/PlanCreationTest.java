@@ -11,7 +11,11 @@ public class PlanCreationTest {
 	
 	private WebDriver driver;
 	
+	/**
+	 * Constructor
+	 */
 	public PlanCreationTest() {
+		// Initializing the web driver.
 		System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
 		driver = new ChromeDriver();
 	}
@@ -28,7 +32,6 @@ public class PlanCreationTest {
 		driver.findElement(By.name("username")).sendKeys("Yash");
 		driver.findElement(By.name("password")).sendKeys("Yash123");	
 		driver.findElement(By.name("button")).click();
-	
 	}	
 	
 	@Test
